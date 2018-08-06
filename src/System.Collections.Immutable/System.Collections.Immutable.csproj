@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>System.Collections.Immutable.WindowsCE</PackageId>
+    <PackageId>WindowsCE.Collections.Immutable</PackageId>
     <Title>System.Collections.Immutable for WindowsCE</Title>
     <Authors>Fabricio Godoy</Authors>
     <PackageLicenseUrl>https://github.com/WindowsCE/System.Collections.Immutable/blob/master/LICENSE.txt</PackageLicenseUrl>
