@@ -26,6 +26,12 @@
     <Copyright>Copyright © Fabrício Godoy</Copyright>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)build\keypair.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
+  </PropertyGroup>
+
   <ItemGroup Condition="'$(TargetFramework)' == 'net35-cf'">
     <PackageReference Include="NETStandard.WindowsCE" Version="1.5.0" />
   </ItemGroup>
