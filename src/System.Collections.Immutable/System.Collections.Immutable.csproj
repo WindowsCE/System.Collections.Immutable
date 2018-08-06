@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net35-cf;netstandard1.0;netstandard2.0;net45</TargetFrameworks>
+    <LangVersion>7.3</LangVersion>
+    <RootNamespace />
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageVersion>1.0.0</PackageVersion>
+    <AssemblyVersion>1.2.3.0</AssemblyVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' != 'net35-cf'">
+    <EnableDefaultItems>false</EnableDefaultItems>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>System.Collections.Immutable.WindowsCE</PackageId>
+    <Title>System.Collections.Immutable for WindowsCE</Title>
+    <Authors>Fabricio Godoy</Authors>
+    <PackageLicenseUrl>https://github.com/WindowsCE/System.Collections.Immutable/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/WindowsCE/System.Collections.Immutable/</PackageProjectUrl>
+    <Description>This package provides collections that are thread safe and guaranteed to never change their contents, also known as immutable collections. Like strings, any methods that perform modifications will not change the existing instance but instead return a new instance. For efficiency reasons, the implementation uses a sharing mechanism to ensure that newly created instances share as much data as possible with the previous instance while ensuring that operations have a predictable time complexity.</Description>
+    <PackageTags>net35-cf,windowsce,wince,netstandard,netstandard1.0,backport</PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <Copyright>Copyright © Fabrício Godoy</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net35-cf'">
+    <PackageReference Include="NETStandard.WindowsCE" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' != 'net35-cf'">
+    <PackageReference Include="System.Collections.Immutable" Version="1.5.0" />
+  </ItemGroup>
+
+</Project>
