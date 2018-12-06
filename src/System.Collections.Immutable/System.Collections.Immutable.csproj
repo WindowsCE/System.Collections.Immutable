@@ -5,7 +5,7 @@
     <LangVersion>7.3</LangVersion>
     <RootNamespace />
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <AssemblyVersion>1.2.3.0</AssemblyVersion>
   </PropertyGroup>
 
@@ -29,7 +29,6 @@
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>$(SolutionDir)build\keypair.snk</AssemblyOriginatorKeyFile>
-    <PublicSign>true</PublicSign>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net35-cf'">
